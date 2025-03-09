@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll("nav ul li a");
+            
+            navLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    navLinks.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>One Piece</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cards-container">
+            <div class="card">
+                <img src="luffy.jpg" alt="Luffy">
+                <h2>Monkey D. Luffy</h2>
+                <p>El capitán de los Piratas del Sombrero de Paja.</p>
+                <a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy" target="_blank">Detalles</a>
+            </div>
+            <div class="card">
+                <img src="zoro.jpg" alt="Zoro">
+                <h2>Roronoa Zoro</h2>
+                <p>Espadachín de la tripulación, usa tres espadas.</p>
+                <a href="https://onepiece.fandom.com/wiki/Roronoa_Zoro" target="_blank">Detalles</a>
+            </div>
+            <div class="card">
+                <img src="nami.jpg" alt="Nami">
+                <h2>Nami</h2>
+                <p>Navegante y cartógrafa de los Piratas del Sombrero de Paja.</p>
+                <a href="https://onepiece.fandom.com/wiki/Nami" target="_blank">Detalles</a>
+            </div>
+            <div class="card">
+                <img src="usopp.jpg" alt="Usopp">
+                <h2>Usopp</h2>
+                <p>Francotirador y mentiroso profesional.</p>
+                <a href="https://onepiece.fandom.com/wiki/Usopp" target="_blank">Detalles</a>
+            </div>
+            <div class="card">
+                <img src="sanji.jpg" alt="Sanji">
+                <h2>Sanji</h2>
+                <p>Cocinero de la tripulación y maestro del combate con piernas.</p>
+                <a href="https://onepiece.fandom.com/wiki/Sanji" target="_blank">Detalles</a>
+            </div>
+            <div class="card">
+                <img src="Tony Tony Chopper.jpg" alt="Chopper">
+                <h2>Tony Tony Chopper</h2>
+                <p>Médico de la tripulación y reno con poderes de la Fruta Hito Hito.</p>
+                <a href="https://onepiece.fandom.com/wiki/Tony_Tony_Chopper" target="_blank">Detalles</a>
+            </div>
+            <div class="card">
+                <img src="Nico Robin.jpg" alt="Robin">
+                <h2>Nico Robin</h2>
+                <p>Arqueóloga y experta en la historia del Siglo Vacío.</p>
+                <a href="https://onepiece.fandom.com/wiki/Nico_Robin" target="_blank">Detalles</a>
+            </div>
+            <div class="card">
+                <img src="franky.jpg" alt="Franky">
+                <h2>Franky</h2>
+                <p>Carpintero de los Piratas del Sombrero de Paja y cyborg.</p>
+                <a href="https://onepiece.fandom.com/wiki/Franky" target="_blank">Detalles</a>
+            </div>
+            <div class="card">
+                <img src="brook.jpg" alt="Brook">
+                <h2>Brook</h2>
+                <p>Músico y espadachín esquelético de la tripulación.</p>
+                <a href="https://onepiece.fandom.com/wiki/Brook" target="_blank">Detalles</a>
+            </div>
+            <div class="card">
+                <img src="jinbe.jpg" alt="Jinbe">
+                <h2>Jinbe</h2>
+                <p>Timonel de la tripulación y maestro del Karate Gyojin.</p>
+                <a href="https://onepiece.fandom.com/wiki/Jinbe" target="_blank">Detalles</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollador JOSE SALGADO - 2025</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1CKTALw5xU/?mibextid=wwXIfr">Facebook</a>
+            <a href="https://youtube.com/@grabaciones_sr?si=bnSpUGzIt7PefmX_">YouTube</a>
+            <a href="https://www.tiktok.com/@reflexionesdevidaof?_t=ZN-8uXxWHyowEw&_r=1">TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>
